@@ -9,8 +9,8 @@ reader = csv.reader(f)
 
 # Get desired columns and rows from csv, 
 # Each row is a sublist inside of lst
-# Right now it is taking rows 0 to 49
-# and columns 0:4
+# Right now it is taking rows 0 to 70
+# and columns 0:10
 lst = []
 for row in itertools.islice(reader, 0, 70):
     lst.append(map(float, row[0:10]))
